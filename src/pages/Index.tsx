@@ -217,12 +217,19 @@ export default function Index() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {kits.map((kit) => (
-              <div key={kit.name} className={`relative bg-gradient-to-b ${kit.color} border ${kit.border} rounded-2xl p-6 text-center hover:-translate-y-2 transition-all duration-300`}>
+              <div key={kit.name} className={`relative bg-gradient-to-b ${kit.color} border ${kit.border} rounded-2xl p-6 text-center hover:-translate-y-2 transition-all duration-300 flex flex-col`}>
                 <div className="text-5xl mb-4">{kit.emoji}</div>
                 <h3 className="font-display uppercase text-lg tracking-wide mb-3">{kit.name}</h3>
-                <div className={`inline-block ${kit.badge} text-white font-display font-bold text-xl px-4 py-1.5 rounded-full`}>
+                <div className={`inline-block ${kit.badge} text-white font-display font-bold text-xl px-4 py-1.5 rounded-full mb-4`}>
                   {kit.price}
                 </div>
+                <a
+                  href={`tel:+79493740030`}
+                  className="mt-auto block w-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-display uppercase text-sm tracking-wider py-2.5 rounded-xl transition-colors"
+                >
+                  Купить
+                </a>
+                <p className="text-xs text-white/50 mt-2">📞 +7 949 374-00-30</p>
               </div>
             ))}
           </div>
