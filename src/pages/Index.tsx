@@ -105,12 +105,12 @@ export default function Index() {
             <p className="font-display uppercase text-sm tracking-widest text-muted-foreground mb-4">Подключение к серверу</p>
             <div className="space-y-3 text-left">
               <button
-                onClick={() => copy('ChristmasWorld.aternos.me')}
+                onClick={() => copy('ChristmasWorld2.aternos.me')}
                 className="w-full flex items-center justify-between gap-3 bg-muted rounded-xl px-4 py-3 hover:bg-muted/70 transition-colors group"
               >
                 <span className="flex items-center gap-3 min-w-0">
                   <Icon name="Globe" className="text-gold shrink-0" size={20} />
-                  <span className="font-mono truncate">ChristmasWorld.aternos.me</span>
+                  <span className="font-mono truncate">ChristmasWorld2.aternos.me</span>
                 </span>
                 <Icon name="Copy" size={18} className="text-muted-foreground group-hover:text-gold shrink-0" />
               </button>
@@ -202,7 +202,7 @@ export default function Index() {
       <footer className="py-10 text-center bg-background">
         <div className="container">
           <div className="font-display font-bold text-xl mb-2">🎄 Christmas<span className="text-gold">World</span></div>
-          <p className="text-muted-foreground font-mono text-sm">ChristmasWorld.aternos.me : 14455</p>
+          <p className="text-muted-foreground font-mono text-sm">ChristmasWorld2.aternos.me : 14455</p>
           <p className="text-muted-foreground text-sm mt-3">© {new Date().getFullYear()} ChristmasWorld · Minecraft Bedrock</p>
         </div>
       </footer>
