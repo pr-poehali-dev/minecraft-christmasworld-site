@@ -148,11 +148,10 @@ export default function Index() {
             <div className="w-20 h-1 bg-gold mx-auto mt-4 rounded-full" style={{ backgroundColor: 'hsl(var(--accent))' }} />
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {[
               { icon: 'Users', title: '2 игрока в день', desc: 'Камерный сервер для тёплой компании' },
               { icon: 'Clock', title: '15:00 — 21:00', desc: 'Ежедневное время работы сервера' },
-              { icon: 'Snowflake', title: 'Зима круглый год', desc: 'Праздничная атмосфера без выходных' },
             ].map((c) => (
               <div key={c.title} className="bg-card border border-border rounded-2xl p-6 text-center hover:border-gold/60 transition-all hover:-translate-y-1 duration-300">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 text-gold mb-4">
