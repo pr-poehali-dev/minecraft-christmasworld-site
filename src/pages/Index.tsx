@@ -148,19 +148,14 @@ export default function Index() {
             <div className="w-20 h-1 bg-gold mx-auto mt-4 rounded-full" style={{ backgroundColor: 'hsl(var(--accent))' }} />
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {[
-              { icon: 'Users', title: '2 игрока в день', desc: 'Камерный сервер для тёплой компании' },
-              { icon: 'Clock', title: '15:00 — 21:00', desc: 'Ежедневное время работы сервера' },
-            ].map((c) => (
-              <div key={c.title} className="bg-card border border-border rounded-2xl p-6 text-center hover:border-gold/60 transition-all hover:-translate-y-1 duration-300">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 text-gold mb-4">
-                  <Icon name={c.icon} size={28} />
-                </div>
-                <h3 className="font-display uppercase text-xl tracking-wide">{c.title}</h3>
-                <p className="text-muted-foreground mt-2">{c.desc}</p>
+          <div className="flex justify-center">
+            <div className="bg-card border border-border rounded-2xl p-6 text-center hover:border-gold/60 transition-all hover:-translate-y-1 duration-300 w-64">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 text-gold mb-4">
+                <Icon name="Users" size={28} />
               </div>
-            ))}
+              <h3 className="font-display uppercase text-xl tracking-wide">2 игрока в день</h3>
+              <p className="text-muted-foreground mt-2">Камерный сервер для тёплой компании</p>
+            </div>
           </div>
 
           <p className="max-w-2xl mx-auto text-center text-lg text-muted-foreground mt-12 leading-relaxed">
