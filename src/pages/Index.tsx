@@ -148,13 +148,20 @@ export default function Index() {
             <div className="w-20 h-1 bg-gold mx-auto mt-4 rounded-full" style={{ backgroundColor: 'hsl(var(--accent))' }} />
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex flex-wrap justify-center gap-6">
             <div className="bg-card border border-border rounded-2xl p-6 text-center hover:border-gold/60 transition-all hover:-translate-y-1 duration-300 w-64">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 text-gold mb-4">
                 <Icon name="Users" size={28} />
               </div>
               <h3 className="font-display uppercase text-xl tracking-wide">2 игрока в день</h3>
               <p className="text-muted-foreground mt-2">Камерный сервер для тёплой компании</p>
+            </div>
+            <div className="bg-card border border-border rounded-2xl p-6 text-center hover:border-gold/60 transition-all hover:-translate-y-1 duration-300 w-64">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 text-gold mb-4">
+                <Icon name="Briefcase" size={28} />
+              </div>
+              <h3 className="font-display uppercase text-xl tracking-wide">2 работы</h3>
+              <p className="text-muted-foreground mt-2">После обновления появились новые работы</p>
             </div>
           </div>
 
