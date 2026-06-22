@@ -31,6 +31,7 @@ const NAV = [
   { id: 'home', label: 'Главная' },
   { id: 'about', label: 'О сервере' },
   { id: 'rules', label: 'Правила' },
+  { id: 'kits', label: 'Киты' },
 ];
 
 const rules = [
@@ -39,7 +40,13 @@ const rules = [
   { icon: 'Hammer', text: 'Не ломайте и не воруйте чужие постройки без разрешения' },
   { icon: 'MessageSquareOff', text: 'Никакого спама и рекламы в чате' },
   { icon: 'Gift', text: 'Поддерживайте новогоднюю атмосферу и добро' },
-  { icon: 'Clock', text: 'Сервер работает строго с 15:00 до 21:00' },
+];
+
+const kits = [
+  { name: 'Набор Демона', price: '1 руб', emoji: '😈', color: 'from-red-900/40 to-red-800/20', border: 'border-red-700/50', badge: 'bg-red-700' },
+  { name: 'Набор Дьявола', price: '5 руб', emoji: '👿', color: 'from-orange-900/40 to-orange-800/20', border: 'border-orange-600/50', badge: 'bg-orange-600' },
+  { name: 'Набор Ангелов', price: '15 руб', emoji: '😇', color: 'from-sky-900/40 to-sky-800/20', border: 'border-sky-500/50', badge: 'bg-sky-500' },
+  { name: 'Набор Бога', price: '25 руб', emoji: '✨', color: 'from-yellow-900/40 to-yellow-700/20', border: 'border-yellow-400/60', badge: 'bg-yellow-500' },
 ];
 
 export default function Index() {
@@ -191,6 +198,30 @@ export default function Index() {
                 <div className="flex items-start gap-2">
                   <Icon name={r.icon} size={20} className="text-gold mt-0.5 shrink-0" />
                   <p>{r.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Kits */}
+      <section id="kits" className="relative py-24 bg-background">
+        <div className="container">
+          <div className="text-center mb-14">
+            <span className="text-4xl">🎒</span>
+            <h2 className="font-display font-bold uppercase text-4xl sm:text-5xl mt-3">Киты</h2>
+            <div className="w-20 h-1 mx-auto mt-4 rounded-full" style={{ backgroundColor: 'hsl(var(--accent))' }} />
+            <p className="text-muted-foreground mt-4">Выбери свой набор и усиль своего персонажа</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {kits.map((kit) => (
+              <div key={kit.name} className={`relative bg-gradient-to-b ${kit.color} border ${kit.border} rounded-2xl p-6 text-center hover:-translate-y-2 transition-all duration-300`}>
+                <div className="text-5xl mb-4">{kit.emoji}</div>
+                <h3 className="font-display uppercase text-lg tracking-wide mb-3">{kit.name}</h3>
+                <div className={`inline-block ${kit.badge} text-white font-display font-bold text-xl px-4 py-1.5 rounded-full`}>
+                  {kit.price}
                 </div>
               </div>
             ))}
