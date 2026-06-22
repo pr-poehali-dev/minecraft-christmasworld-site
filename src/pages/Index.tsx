@@ -224,12 +224,14 @@ export default function Index() {
                   {kit.price}
                 </div>
                 <a
-                  href={`tel:+79493740030`}
+                  href="https://max.ru/+79493740030"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-auto block w-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-display uppercase text-sm tracking-wider py-2.5 rounded-xl transition-colors"
                 >
                   Купить
                 </a>
-                <p className="text-xs text-white/50 mt-2">📞 +7 949 374-00-30</p>
+                <p className="text-xs text-white/50 mt-2">💬 MAX: +7 949 374-00-30</p>
               </div>
             ))}
           </div>
